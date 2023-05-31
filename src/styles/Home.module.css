@@ -3,7 +3,6 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
   min-height: 100vh;
 }
 
@@ -107,6 +106,230 @@
 .logo {
   position: relative;
 }
+
+.page-wrapper {
+  margin-top: 25px;
+}
+
+.page-wrapper p {
+  font-size: 1.1em;
+  margin: 0.7em 0;
+}
+
+.page-wrapper li {
+  font-size: 1.1em;
+  margin: 0.7em 0;
+}
+
+.MsoNormal {
+  font-size: 1em !important;
+}
+
+.page-wrapper table {
+  text-align: center;
+  margin: 40px 0;
+  align-self: center;
+}
+
+.article-container {
+  max-width: 740px;
+  overflow: auto;
+  margin: 20px auto 100px auto;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.p5-selection-range {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.p5-sketch-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  background-color: #303030;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  color: white;
+  
+}
+
+.p5-sketch-details > div {
+  padding: 10px;
+}
+
+.p5-normal-sketch-details > * {
+  margin: 10px;
+}
+
+.p5-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: fit-content;
+  justify-self: center;
+  align-self: center;
+  max-width: min-content;
+  position: relative;
+}
+
+#custom-triangle {
+  touch-action: none;
+}
+.misc-options {
+  text-align: center;
+}
+.p5-options {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #303030;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.p5-options div {
+  margin: 4px;
+}
+
+.button-input {
+  border-radius: 6px;
+  border: none;
+  background: #ec9c33;
+  color: white;
+  font-size: 0.8em;
+  padding: 10px 8px;
+  cursor: pointer;
+  border: 2px solid #ec8633;
+  transition: all .15s ease-in-out;
+}
+
+.button-input:hover {
+  background: #474747;
+  transform: scale(1.03);
+}
+
+.button-input:active {
+  transform: scale(1.1);
+}
+
+.text-input {
+  width: 48px;
+  border: none;
+  border-radius: 6px;
+
+}
+
+
+.equation {
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+  align-self: center;
+  max-width: 100%;
+  height: auto;
+  margin: 0.7em 0;
+
+}
+
+.input-switch[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+  display: none;
+}
+
+.input-switch-label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 45px;
+  height: 25px;
+  background: grey;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+
+.input-switch-label:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+.input-switch:checked+label {
+  background: #ec9c33;
+}
+
+.input-switch:checked+label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+.input-switch:active:after {
+  width: 130px;
+}
+
+.selections-container {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.bottom-options {
+  display: flex;
+}
+
+@media (max-width: 1000px) {
+  .article-container {
+      width: 80vw;
+  }
+}
+
+@media (max-width: 625px) {
+  .p5-options {
+      flex-direction: column;
+
+  }
+  .p5-selection-range {
+      flex-direction: column;
+  }
+  
+}
+
+.code-snippet {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: block;
+  font-family: "Courier New", monospace;
+  padding: 10px;
+  white-space: pre-wrap; /* This is important to preserve the code indentation */
+}
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
