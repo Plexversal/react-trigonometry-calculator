@@ -1,3 +1,5 @@
+![image](https://github.com/Plexversal/react-trigonometry-calculator/assets/47725871/48b3fdb3-d8d6-42db-964a-55a4af0bdfb7)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
